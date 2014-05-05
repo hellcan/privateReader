@@ -1,0 +1,33 @@
+package com.toeflassistant.notebook;
+
+import com.astuetz.PagerSlidingTabStrip;
+import com.toeflassistant.writting.R;
+
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
+
+public class NoteBookListActivity extends Fragment {
+	
+	private final Handler handler = new Handler();
+
+	private PagerSlidingTabStrip tabs;
+	private ViewPager pager;
+	private MyPagerAdapter adapter;
+
+	private Drawable oldBackground = null;
+	private int currentColor = 0xFF666666;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.notebook_main_activity);	
+		tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
+		pager = (ViewPager) findViewById(R.id.pager);
+		adapter = new MyPagerAdapter(getSupportFragmentManager());
+
+		pager.setAdapter(adapter);
+		}
+}

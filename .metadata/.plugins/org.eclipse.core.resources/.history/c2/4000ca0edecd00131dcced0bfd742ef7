@@ -1,0 +1,52 @@
+package com.toeflassistant.search;
+
+import java.util.List;
+
+import com.toeflassistant.writting.R;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
+
+public class SearchResultListAdapter extends BaseAdapter {
+	private List<String> topicList = null;
+	private List<String> questionList = null;
+	private List<String> sampleList = null;
+	private Context mContext;
+
+	public SearchResultListAdapter(Context mContext, List<List<String>> wholeList) {
+		this.mContext = mContext;
+		this.topicList = wholeList.get(0);
+		this.questionList = wholeList.get(1);
+		this.sampleList =wholeList.get(2);
+}
+	@Override
+	public int getCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Object getItem(int position) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public long getItemId(int position) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public View getView(int position, View v, ViewGroup parent) {
+		v = LayoutInflater.from(mContext).inflate
+			    (R.layout.search_listview_item_activity,null);
+
+		return v;
+	}
+
+}

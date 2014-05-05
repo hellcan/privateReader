@@ -1,0 +1,6 @@
+package com.toeflassistant.notebook;
+
+
+public class QuickContactFragment extends DialogFragment {
+
+}

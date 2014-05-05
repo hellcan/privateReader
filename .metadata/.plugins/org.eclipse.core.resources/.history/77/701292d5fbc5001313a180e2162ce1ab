@@ -1,0 +1,36 @@
+package com.toeflassistant.tag.sample;
+
+import com.toeflassistant.mTextView.SelectableTextView;
+import com.toeflassistant.writting.R;
+
+import android.app.Activity;
+import android.graphics.Point;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class TagTopicSampleDetailActivity extends Activity{
+	private TextView tagSample;
+	
+	private String tagSampleContent;
+	SelectableTextView mTextView;
+	private int mTouchX;
+	private int mTouchY;
+	private final static int DEFAULT_SELECTION_LEN = 1;
+    private String questionId;	
+    private String mTextViewWide;
+    static Point size;
+    static float density;
+    String text;
+    int start;
+    int end;
+	
+	public void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.tag_sample_samplecontent_activity);
+		tagSample =(TextView) findViewById(R.id.tag_sample_content);
+		Bundle extras = getIntent().getExtras();
+		tagSampleContent = extras.getString("tag_sample_content");
+		tagSample.setText(tagSampleContent);
+		}
+
+}

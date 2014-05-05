@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/grey_background_darklevel1"
+    android:padding="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/card_background_for_list_selector" >
+
+        <TextView
+            android:id="@+id/order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent" 
+            android:layout_height="1dp"
+            android:layout_below="@id/order_number"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#2CB1E1" />
+
+        <TextView
+            android:id="@+id/topic_desciption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textSize="16sp" />
+        
+       
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/topic_desciption"
+            android:layout_marginTop="18dp"
+            android:background="@color/grey_1"
+            android:padding="6dp" >
+
+            <TextView
+                    android:id="@+id/sample_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="6dp"                 
+                    android:background="@color/blue_3"
+                    android:padding="6dp"
+                    android:text="Sample: " />
+            
+            <TextView
+                android:id="@+id/item_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@id/sample_total"
+                android:background="@color/green_3"
+                android:padding="6dp"
+                android:text="Tip"
+                 />
+            
+                  
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

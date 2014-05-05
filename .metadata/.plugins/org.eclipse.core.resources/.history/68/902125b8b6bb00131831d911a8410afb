@@ -1,0 +1,7 @@
+package com.toeflassistant.notebook;
+
+import android.support.v4.app.Fragment;
+
+public class NoteBookListActivity extends Fragment {
+
+}
