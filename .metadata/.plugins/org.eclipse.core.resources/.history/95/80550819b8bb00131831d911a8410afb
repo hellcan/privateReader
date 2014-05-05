@@ -1,0 +1,69 @@
+package com.toeflassistant.notebook;
+
+import com.astuetz.PagerSlidingTabStrip;
+import com.toeflassistant.writting.R;
+
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.view.Menu;
+
+public class NoteBookListActivity extends FragmentActivity {
+	
+	private final Handler handler = new Handler();
+
+	private PagerSlidingTabStrip tabs;
+	private ViewPager pager;
+	private MyPagerAdapter adapter;
+
+	private Drawable oldBackground = null;
+	private int currentColor = 0xFF666666;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.notebook_main_activity);	
+		tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
+		pager = (ViewPager) findViewById(R.id.pager);
+		adapter = new MyPagerAdapter(getSupportFragmentManager());
+
+		pager.setAdapter(adapter);
+		}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.main, menu);
+		}
+	
+	
+	public class MyPagerAdapter extends FragmentPagerAdapter {
+
+		private final String[] TITLES = { "Categories", "Home", "Top Paid", "Top Free", "Top Grossing", "Top New Paid",
+				"Top New Free", "Trending" };
+
+		public MyPagerAdapter(FragmentManager fm) {
+			super(fm);
+		}
+
+		@Override
+		public CharSequence getPageTitle(int position) {
+			return TITLES[position];
+		}
+
+		@Override
+		public int getCount() {
+			return TITLES.length;
+		}
+
+		@Override
+		public Fragment getItem(int position) {
+			return SuperAwesomeCardFragment.newInstance(position);
+		}
+
+	}
+}

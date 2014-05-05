@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView" 
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/grey_background_darklevel1"
+    android:padding="7dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background_for_list_selector" >
+
+        <TextView
+            android:id="@+id/item_detail_questioncard_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"
+            android:text="QuestionCard"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_detail_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/item_detail_questioncard_introduction"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#2CB1E1" />
+
+        <TextView
+            android:id="@+id/item_detail_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_detail_line"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="TOPIC"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/item_detail_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_detail_line"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/item_detail_topic"            
+            android:focusable="false"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:src="@id/icon_help" />
+
+        <TextView
+            android:id="@+id/item_detail_topic_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_detail_topic"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="显示topic内容"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_detail_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_detail_topic_description"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="SAMPLE QUESTION"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/item_detail_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_detail_topic_description"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/item_detail_sample"
+            android:background="@color/red_3"
+            android:focusable="false"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp" />
+
+        <TextView
+            android:id="@+id/item_detail_sample_question_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_detail_sample"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:maxLines="10"
+            android:text="显示sample内容"
+            android:textSize="16sp" />
+
+        <com.haarman.supertooltips.ToolTipRelativeLayout
+            android:id="@+id/topic_tooltipframelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_detail_sample_question_description"
+            android:layout_marginTop="18dp"
+            android:background="@color/grey_1"
+            android:padding="6dp" >
+
+            <TextView
+                android:id="@+id/item_detail_sample_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/sample_button_background_selector"
+                android:padding="6dp"
+                android:text="Sample: " />
+
+            <TextView
+                android:id="@+id/item_detail_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@id/item_detail_sample_total"
+                android:background="@drawable/tip_button_background_selector"
+                android:padding="6dp"
+                android:text="Tip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_detail_tag_area"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/card_background_for_list_selector" >
+        
+            <TextView
+            android:id="@+id/item_detail_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textSize="16sp" 
+            android:text="TAG"/>
+        
+        <ImageButton
+            android:id="@+id/item_detail_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/item_detail_tag"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/red_3"
+            android:focusable="false"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp" />
+        
+        <TextView
+            android:id="@+id/item_detail_tag_line"
+            android:layout_width="match_parent" 
+            android:layout_height="1dp"
+            android:layout_below="@id/item_detail_tag"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#2CB1E1" />
+        
+        <TextView
+                android:id="@+id/tag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_below="@id/item_detail_tag_line"             
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/tag_button_background_selector"       
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:padding="6dp"
+                android:text="显示tag1"
+                />
+
+            <TextView
+                android:id="@+id/tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@id/item_detail_tag_line"                
+                android:layout_toRightOf="@+id/tag1"
+                android:background="@drawable/tag_button_background_selector"       
+                android:padding="6dp"
+                android:text="显示tag2"
+                 />
+             <TextView
+                android:id="@+id/tag3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"                
+                android:layout_below="@id/item_detail_tag_line"
+                android:layout_toRightOf="@+id/tag2"
+                android:background="@drawable/tag_button_background_selector"       
+                android:padding="6dp"
+                android:text="显示tag3"
+                />
+                <TextView
+                android:id="@+id/tag4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@id/tag1"
+                android:background="@drawable/tag_button_background_selector"       
+                android:padding="6dp"
+                android:text="显示tag4"
+                 />
+                <TextView
+                android:id="@+id/tag5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tag4"
+                android:layout_below="@id/tag2"
+                android:background="@drawable/tag_button_background_selector"       
+                android:padding="6dp"
+                android:text="显示tag5"
+                />
+                <TextView
+                android:id="@+id/tag6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toRightOf="@+id/tag5"
+                android:layout_below="@id/tag3"    
+                android:background="@drawable/tag_button_background_selector"       
+                android:padding="6dp"
+                android:text="显示tag6"
+                 />
+                <TextView
+                android:id="@+id/tag7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@id/tag4"
+                android:background="@drawable/tag_button_background_selector"       
+                android:padding="6dp"
+                android:text="显示tag7"
+                 />
+                
+                <TextView
+                     android:id="@+id/tag8"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="3dp"
+                     android:layout_toRightOf="@+id/tag4"
+                     android:layout_below="@id/tag5"
+                     android:background="@drawable/tag_button_background_selector"       
+                     android:padding="6dp"
+                     android:text="显示tag8"
+                />
+                
+                <TextView
+                     android:id="@+id/tag9"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="3dp"
+                     android:layout_toRightOf="@+id/tag5"
+                     android:layout_below="@id/tag6"    
+                     android:background="@drawable/tag_button_background_selector"       
+                     android:padding="6dp"
+                     android:text="显示tag9"
+                 />
+                
+               <com.haarman.supertooltips.ToolTipRelativeLayout
+                   android:id="@+id/tag_tooltipframelayout"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" />
+         
+        
+       
+         
+   </RelativeLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;icon_help.png&apos; to &apos;drawable-xhdpi&apos;&#x0D;&#x0A;- Original project: &apos;TOEFLSpeakPracticeFreeChineseVersion&apos;&#x0D;&#x0A;- Destination element: &apos;drawable-xhdpi&apos;&#x0D;&#x0A;- Original element: &apos;icon_help.png&apos;" description="Copy file" element1="res/drawable-xxhdpi/icon_help.png" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1398678233734" target="/ToeflWrittingAssistant/res/drawable-xhdpi" units="0" version="1.0"/>
+</session>

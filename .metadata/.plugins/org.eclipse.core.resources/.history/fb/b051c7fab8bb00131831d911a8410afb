@@ -1,0 +1,22 @@
+package com.toeflassistant.notebook;
+
+import com.astuetz.PagerSlidingTabStrip;
+import com.astuetz.viewpager.extensions.sample.QuickContactFragment;
+import com.astuetz.viewpager.extensions.sample.QuickContactFragment.ContactPagerAdapter;
+
+import android.support.v4.app.DialogFragment;
+import android.support.v4.view.ViewPager;
+
+
+public class QuickContactFragment extends DialogFragment {
+	
+	private PagerSlidingTabStrip tabs;
+	private ViewPager pager;
+	private ContactPagerAdapter adapter;
+
+	public static QuickContactFragment newInstance() {
+		QuickContactFragment f = new QuickContactFragment();
+		return f;
+	}
+
+}

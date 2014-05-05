@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contact_listitem"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+     >
+     
+    <TextView
+        android:id="@+id/notebook_sentence_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"     
+        android:layout_alignParentLeft="true"  
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="8dip"
+        android:paddingLeft="8dip"
+        android:paddingBottom="8dip"
+        android:singleLine="true"
+        android:text="hhhh"
+        android:layout_margin="8dip"
+         />
+    
+     <Button
+        android:id="@+id/ntoebook_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+        android:singleLine="true"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"       
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_style_six_normal"
+        android:text="删除"
+        android:layout_margin="8dip"
+         />
+
+</RelativeLayout>
