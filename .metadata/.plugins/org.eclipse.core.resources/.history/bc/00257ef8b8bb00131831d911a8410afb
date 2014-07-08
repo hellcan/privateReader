@@ -1,8 +1,0 @@
-package com.toeflassistant.notebook;
-
-import android.support.v4.app.DialogFragment;
-
-
-public class QuickContactFragment extends DialogFragment {
-
-}

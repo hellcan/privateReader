@@ -1,7 +1,0 @@
-package com.toeflassistant.notebook;
-
-import android.app.Activity;
-
-public class QuickContactFragment extends Activity {
-
-}
