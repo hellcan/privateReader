@@ -1,0 +1,222 @@
+<!-- 该布局一共分为三大块，分块部分都是靠LinearLayout完成的，三部分竖着占比1:2:1 -->
+<!-- 第一部分显示图片Banner；第二部分左边显示题库，加星，右边显示随机出题；第三部分在最下面，包括历史和关于 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 第一部分 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:tag="rela1_for_image" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/search_background" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/yellow_normal" />
+
+        <!--<ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_above="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            android:background="#00000000"
+            android:src="@drawable/search_button" />-->
+
+    </RelativeLayout>
+
+    <!-- 第二部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:tag="line1_ni_mid" >
+
+        <!-- 显示题库和加星button的结构 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:tag="line_for_questionpool_and_starred" >
+
+            <!-- 题库 -->
+
+            <RelativeLayout
+                android:id="@+id/main_activity_question_pool_rela_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_background_for_list_selector"
+                android:paddingBottom="12dp" >
+
+                <ImageView
+                    android:id="@+id/question_pool_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/main_question"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/question_pool_t"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="Questions"
+                    android:textColor="@color/grey_font_darklevel4"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+
+            <!-- 加星 -->
+
+            <RelativeLayout
+                android:id="@+id/main_activity_starred_rela_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_background_for_list_selector"
+                android:paddingBottom="12dp" >
+
+                <ImageView
+                    android:id="@+id/category_i"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/main_category" />
+
+                <TextView
+                    android:id="@+id/category_t"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="Category"
+                    android:textColor="@color/grey_font_darklevel4"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 显示随机出题的结构 -->
+
+        <RelativeLayout
+            android:id="@+id/main_activity_raise_question_rela_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/card_background_for_list_selector"
+            android:paddingBottom="12dp"
+            android:tag="line_for_raise_one_question" >
+
+            <ImageView
+                android:id="@+id/standard_i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:src="@drawable/main_standards" />
+
+            <TextView
+                android:id="@+id/standard_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="Standards"
+                android:textColor="@color/grey_font_darklevel4"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 第三部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:tag="line1_in_end" >
+
+        <!-- 历史部分 -->
+
+        <RelativeLayout
+            android:id="@+id/main_activity_history_rela_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/card_background_for_list_selector"
+            android:paddingBottom="12dp" >
+
+            <ImageView
+                android:id="@+id/notebook_i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/main_notebook" />
+
+            <TextView
+                android:id="@+id/notebook_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="Let's Try"
+                android:textColor="@color/grey_font_darklevel4"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- timer部分 -->
+
+        <RelativeLayout
+            android:id="@+id/main_activity_timer_rela_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/card_background_for_list_selector"
+            android:paddingBottom="12dp" >
+
+            <ImageView
+                android:id="@+id/about_i"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/main_about" />
+
+            <TextView
+                android:id="@+id/about_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="About"
+                android:textColor="@color/grey_font_darklevel4"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

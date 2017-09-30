@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/fengchengding/.android/build-cache/ea3c6507233a3a4daa149d2827f55ee6588ade83/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/fengchengding/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes_c9e2552224a83e1dd6f390450f81242df53aa186.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fengchengding/.android/build-cache/db82a31fa4b02d97fea313060f718f39628af972/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/fengchengding/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes_311adbcd7e4b04686a9d019b733cd8db48832ccd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fengchengding/.android/build-cache/27f0faa62819288f7242a1d30508d0e839f03bf6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/Users/fengchengding/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes_87e82577e1268213a3136f1ac429a8fa3eaf2ba2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fengchengding/.android/build-cache/6e1a1efec06d1c643fc3c8551199f27f8cf456a4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/fengchengding/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes_1575144a709a69e252662c764666e9f99975af78.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fengchengding/.android/build-cache/f84347c236cb31e49d36ecdc0bdc8576dbb3e01f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/Users/fengchengding/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes_2cc8d0de4ca5718f7a44a830f02c28a03ba39022.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fengchengding/.android/build-cache/ac3d889d3769625eca4c3c36e2a69a2c96abc0d0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7d64ac7532465ff86b7e0b650fc51aa74067d70f">
+        <dex dex="/Users/fengchengding/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes_5f7e778a15afa66e0a451fff3c9d4c919827da4d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fengchengding/.android/build-cache/933540959b6f2885c8ecb4d8744571f613ea387c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/Users/fengchengding/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes_0db4a1f0d03cadedb2da348ffeafd3246e995a79.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fengchengding/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/fengchengding/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_b5042e472ce873bd3551170a5631884da4c86b28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fengchengding/.android/build-cache/9537d7ea375331c82fa4a16911310eccc4156e4c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/fengchengding/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes_3ddb1b993cb43867ba0a4c5c6b931b2d1464eaa9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fengchengding/.android/build-cache/03f22cbaa2a60e6f323c4e66c8b5ef65e4b4c134/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/fengchengding/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes_f0c0a08fd9398e1b91fdb1ea6098ffd91a0f770e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fengchengding/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/Users/fengchengding/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_5d7d0f45d43fb59f2428744d88d021bc8c53919e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fengchengding/.android/build-cache/d8423bf74672d4fd25415c8ad577b74e28b4f0a7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/fengchengding/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes_4bd201aada6272f60f7418f4c337d5721db2c7af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/fengchengding/.android/build-cache/92cb6da1e0c1b5441c176e7d1d73d3b33de381a2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/fengchengding/AndroidStudioProjects/MyApplication/app/build/intermediates/pre-dexed/debug/classes_ae49329559656b398019a588ca3ee85f41420345.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,52 @@
+Applications Memory Usage (kB):
+Uptime: 7909460 Realtime: 7909460
+
+** MEMINFO in pid 30265 [com.example.toeflreading.myapplication] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     4894     4796        0        0    16896    15152     1743
+  Dalvik Heap     8889     8836        0        0    14618    10652     3966
+ Dalvik Other      201      200        0        0                           
+        Stack      180      180        0        0                           
+       Cursor       12       12        0        0                           
+       Ashmem        2        0        0        0                           
+    Other dev        4        0        4        0                           
+     .so mmap     1218      100      104        0                           
+    .apk mmap      208        0        8        0                           
+    .ttf mmap       85        0       72        0                           
+    .dex mmap     2812     2732       80        0                           
+    .oat mmap     1584        0      412        0                           
+    .art mmap     1258      464      224        0                           
+   Other mmap       17        8        0        0                           
+      Unknown      114      112        0        0                           
+        TOTAL    21478    17440      904        0    31514    25804     5709
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:     9524
+         Native Heap:     4796
+                Code:     3508
+               Stack:      180
+            Graphics:        0
+       Private Other:      336
+              System:     3134
+ 
+               TOTAL:    21478      TOTAL SWAP (KB):        0
+ 
+ Objects
+               Views:       96         ViewRootImpl:        2
+         AppContexts:        3           Activities:        2
+              Assets:        2        AssetManagers:        2
+       Local Binders:       12        Proxy Binders:       17
+       Parcel memory:        6         Parcel count:       24
+    Death Recipients:        0      OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:      237
+  PAGECACHE_OVERFLOW:      162          MALLOC_SIZE:       62
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         1     3383             19         1/18/2  /data/data/com.example.toeflreading.myapplication/database/writepractice.db

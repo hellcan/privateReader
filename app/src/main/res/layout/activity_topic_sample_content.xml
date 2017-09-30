@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/card_background_for_list_default"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/top_line"
+        android:layout_height="3dp"
+        android:layout_width="match_parent"
+        android:background="@color/red_4" />
+
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <me.codeboy.android.aligntextview.AlignTextView
+            android:id="@+id/sample_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="sample content"
+            android:lineSpacingExtra="4dp"
+            android:singleLine="false"
+            android:textColor="@color/grey_font_darklevel4"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+
+</LinearLayout>
